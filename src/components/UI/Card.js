@@ -1,6 +1,6 @@
 import './Card.css'
 
-function Card(props) {
+const Card = (props) => {
   // this classes const allows us to add classNames to custom components we have created, otherwise it would only apply the styles we set in card.css
   const classes= 'card ' + props.className;
   return(
