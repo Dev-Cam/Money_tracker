@@ -5,36 +5,43 @@ import ExpenseItem from "./ExpenseItem";
 import './Expenses.css'
 
 const Expenses = (props) => {
+  const [year, setYear] = useState('2020');
 
-  const [year, setYear]= useState('');
-  console.log(year);
+  // console.log(year);
+ const filterExpenses = year => {
+  setYear(year);
+  props.onYearChange(year)
+ }
+
+
+// filters through the existing array passed from app.js and returns a new array of the expenses with the same year as the filter
+ const filteredExpenses = props.data.filter( expense => {
+  return expense.date.getFullYear().toString() === year;
+ })
+
+ let expensesContent = <p>No expenses found.</p>;   
+
+ if (filteredExpenses.length > 0) {
+  expensesContent = filteredExpenses.map((expense) => ( 
+    <ExpenseItem 
+      key={expense.id} 
+      title={expense.title} 
+      amount={expense.amount} 
+      date={expense.date}
+    />
+  ));
+ }
+
 return(
   <Card className="expenses">
-    <ExpenseFilter onYearChange={setYear}/>
-    <ExpenseItem 
-      key={props.data[0].id} 
-      title={props.data[0].title} 
-      amount={props.data[0].amount} 
-      date={props.data[0].date} 
-      />
-    <ExpenseItem 
-      key={props.data[1].id} 
-      title={props.data[1].title} 
-      amount={props.data[2].amount} 
-      date={props.data[1].date} 
-      />
-    <ExpenseItem 
-      key={props.data[2].id} 
-      title={props.data[2].title} 
-      amount={props.data[2].amount} 
-      date={props.data[2].date} 
-      />
-    <ExpenseItem 
-      key={props.data[3].id} 
-      title={props.data[3].title} 
-      amount={props.data[3].amount} 
-      date={props.data[3].date} 
-      />
+    <ExpenseFilter 
+      selected={year} 
+      onYearChange={filterExpenses}
+    />
+    {expensesContent}
+  
+    
+    
   </Card>
 )
 }
