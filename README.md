@@ -20,3 +20,7 @@ All things react, how components interacted with each other, state management an
 Working with props and understanding how they are passed down to then be returned to the parent.
 JSX and learning that this is a much better way to code HTML to keep it dynamic.
 Realising that chefs can learn new tricks or skills, Confidence began to grow with this project
+
+
+## Clone and play
+Clone the repo, run npm install and have a play
