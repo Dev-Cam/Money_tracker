@@ -21,7 +21,7 @@ const NewExpense = (props) => {
 
   return(
     <div className='new-expense'>
-      <button onClick={toggleForm}>Add New Expense</button>
+      <button dataTestId='addExpense' onClick={toggleForm}>Add New Expense</button>
       {
       formOpen && 
         <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={toggleForm}/>
