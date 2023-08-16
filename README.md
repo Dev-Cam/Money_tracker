@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Expense Recorder
+An app that tracks expenses added by the user, it also displays the weight of expenses each month.
+Tech: React, Tailwind, CSS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screen Shot 2023-08-16 at 1 36 07 pm](https://github.com/Dev-Cam/money_tracker/assets/76504164/f6f5febb-e814-4598-98fe-687f394fdc95)
 
-## Available Scripts
 
-In the project directory, you can run:
+## The What and the How
+My first taste of building with React. 
+I did my best to build a project with a few layers to make sure I understood how things worked. 
 
-### `npm start`
+This was vastly different from my colour picker game because it was my introduction to using JSX so understanding that nothing was static anymore was really cool to me.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project made me feel like I was beginning to grasp the basics and start to cement my fundamental knowledge of React.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screen Shot 2023-08-16 at 2 11 15 pm](https://github.com/Dev-Cam/money_tracker/assets/76504164/062b4e23-1f4c-41ce-a3ba-df858d950476)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Learning
+All things react, how components interacted with each other, state management and where to create it so that it was stored in the parent and passed up.
+Working with props and understanding how they are passed down to then be returned to the parent.
+JSX and learning that this is a much better way to code HTML to keep it dynamic.
+Realising that chefs can learn new tricks or skills, Confidence began to grow with this project
